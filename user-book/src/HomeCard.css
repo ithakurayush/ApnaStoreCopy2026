@@ -1,0 +1,9 @@
+.card-hover:hover {
+    border : 2px solid #adb5bd;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+    cursor: pointer;
+}
