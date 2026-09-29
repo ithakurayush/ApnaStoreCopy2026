@@ -12,6 +12,8 @@ import {
 import { FaTrash, FaEdit, FaEye } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 const apiUrl = import.meta.env.VITE_API_URL
+
+
 function BookList () {
   let [books, setBooks] = useState([])
   let [isDelete, setIsDelete] = useState(false)
@@ -95,7 +97,7 @@ function BookList () {
             <thead>
               <tr>
                 <th>BookImage</th>
-                <th>Book Tittle</th>
+                <th>Book Title</th>
                 <th>Author Name</th>
                 <th>Price</th>
                 <th>ISBN NO</th>
