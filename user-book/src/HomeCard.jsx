@@ -61,7 +61,7 @@ function HomeCard () {
               >
                 <img
                   src={book.bookImage}
-                  alt={book.bookTittle}
+                  alt={book.bookTitle}
                   style={{
                     height: '100%',
                     width: '100%',

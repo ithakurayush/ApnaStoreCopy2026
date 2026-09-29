@@ -77,7 +77,7 @@ function BookList () {
             <Form.Group>
               <Form.Control
                 type='text'
-                placeholder='enter bookTittle to search....'
+                placeholder='enter bookTitle to search....'
                 onChange={e => setSearchBook(e.target.value)}
               ></Form.Control>
             </Form.Group>
@@ -109,7 +109,7 @@ function BookList () {
                   <td>
                     <img src={book.bookImage} width='30px' hegiht='30px'></img>
                   </td>
-                  <td>{book.bookTittle}</td>
+                  <td>{book.bookTitle}</td>
                   <td>{book.authorName}</td>
                   <td>{book.originalPrice}</td>
                   <td>{book.isbnNo}</td>
