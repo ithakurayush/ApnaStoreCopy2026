@@ -1,3 +1,63 @@
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import Sidebar from './components/Sidebar'
+// import WelcomePage from './pages/WelcomePage/WelcomePage'
+// import BookList from './pages/books/BookList'
+// import AddBook from './pages/books/AddBook'
+// import BookPageForEdit from './pages/books/BookPageForEdit'
+// import AdminLogin from './pages/LoginSignupPages/AdminLogin'
+// import CreateDiscount from './pages/Discount/CreateDiscount'
+// import DiscountList from './pages/Discount/DiscountList'
+// import DiscountForEdit from './pages/Discount/DiscountForEdit'
+// import BookDetail from './pages/books/BookDetail'
+// import UserList from './pages/Users/UserList'
+// import AddAvailability from './pages/ProductAvailability/AddAvailability'
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       {/* <NavBar /> */}
+//       <Routes>
+//         <Route path="/" element={<AdminLogin />} />
+//       </Routes>
+
+//       <div className="d-flex">
+//         <Sidebar />
+//         <main style={{ flexGrow: 1, padding: "20px" }}>
+//           <Routes>
+//             <Route path="/admin/dashboard" element={<WelcomePage />} />
+
+//             {/* Welcome Page */}
+//             <Route path="/" element={<WelcomePage />} />
+//             <Route path="/books" element={<BookList> </BookList>}></Route>
+//             <Route path="/add/book" element={<AddBook></AddBook>}></Route>
+//             <Route
+//               path="/edit/book/:id"
+//               element={<BookPageForEdit></BookPageForEdit>}
+//             ></Route>
+//             <Route
+//               path="/discounts"
+//               element={<DiscountList></DiscountList>}
+//             ></Route>
+//             <Route
+//               path="/add/discount"
+//               element={<CreateDiscount></CreateDiscount>}
+//             ></Route>
+//             <Route
+//               path="/edit/discount/:id"
+//               element={<DiscountForEdit></DiscountForEdit>}
+//             ></Route>
+//             <Route path="/book/:id" element={<BookDetail></BookDetail>}></Route>
+//             <Route path='/users' element={<UserList></UserList>}></Route>
+//             <Route path="/availability" element={<AddAvailability />} />
+//           </Routes>
+//         </main>
+//       </div>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App
+
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
 import WelcomePage from './pages/WelcomePage/WelcomePage'
@@ -11,6 +71,7 @@ import DiscountForEdit from './pages/Discount/DiscountForEdit'
 import BookDetail from './pages/books/BookDetail'
 import UserList from './pages/Users/UserList'
 import AddAvailability from './pages/ProductAvailability/AddAvailability'
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,33 +82,60 @@ function App() {
 
       <div className="d-flex">
         <Sidebar />
+
         <main style={{ flexGrow: 1, padding: "20px" }}>
           <Routes>
             <Route path="/admin/dashboard" element={<WelcomePage />} />
 
             {/* Welcome Page */}
             <Route path="/" element={<WelcomePage />} />
-            <Route path="/books" element={<BookList> </BookList>}></Route>
-            <Route path="/add/book" element={<AddBook></AddBook>}></Route>
+
+            <Route
+              path="/books"
+              element={<BookList />}
+            />
+
+            <Route
+              path="/add/book"
+              element={<AddBook />}
+            />
+
             <Route
               path="/edit/book/:id"
-              element={<BookPageForEdit></BookPageForEdit>}
-            ></Route>
+              element={<BookPageForEdit />}
+            />
+
             <Route
               path="/discounts"
-              element={<DiscountList></DiscountList>}
-            ></Route>
+              element={<DiscountList />}
+            />
+
             <Route
               path="/add/discount"
-              element={<CreateDiscount></CreateDiscount>}
-            ></Route>
+              element={<CreateDiscount />}
+            />
+
             <Route
               path="/edit/discount/:id"
-              element={<DiscountForEdit></DiscountForEdit>}
-            ></Route>
-            <Route path="/book/:id" element={<BookDetail></BookDetail>}></Route>
-            <Route path='/users' element={<UserList></UserList>}></Route>
-            <Route path="/availability" element={<AddAvailability />} />
+              element={<DiscountForEdit />}
+            />
+
+            <Route
+              path="/book/:id"
+              element={<BookDetail />}
+            />
+
+            <Route
+              path="/users"
+              element={<UserList />}
+            />
+
+            {/* Availability */}
+            <Route
+              path="/availability"
+              element={<AddAvailability />}
+            />
+
           </Routes>
         </main>
       </div>
